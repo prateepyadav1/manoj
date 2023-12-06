@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Registration Form</title>
+<script>
+     function passvalues()
+	 {
+	 var Name=document.getElementById("Name").value;
+	         var Email=document.getElementById("Email").value;
+	         var Address=document.getElementById("Address").value;
+			 var password=document.getElementById("password").value;
+	         localStorage.setItem("Name",Name);
+	         localStorage.setItem("Email",Email);
+	         localStorage.setItem("Address",Address);
+			 localStorage.setItem("password",password);
+	         return;
+}
+</script>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form Action="Details2.html">
+<fieldset>
+<legend>Registration</legend>
+<label>Name</label>
+<input type="text" id="Name"><br>
+<label>Email</label>
+<input type="Email" id="Email"><br>
+
+
+
+<label>Address</label>
+<input type="Address" id="Address"><br>
+<label>password</label>
+<input type="password" id="password"><br>
+<input type="submit" value="submit" onclick="passvalues()"/>
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
+	 
+	 
+	 
